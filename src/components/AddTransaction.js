@@ -7,8 +7,8 @@ export default function  AddTransaction ()  {
 
     const { addTransaction } = useContext(GlobalContext);
 
-    const onSubmit = e => {
-        e.preventDefault();
+    const onSubmit = event => {
+        event.preventDefault();
 
         const newTransaction = {
             id: Math.floor(Math.random() * 100000000),
